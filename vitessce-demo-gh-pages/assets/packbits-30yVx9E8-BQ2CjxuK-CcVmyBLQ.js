@@ -1,0 +1,1 @@
+import{N as s}from"./index-Bm04Wswa.js";class i extends s{decodeBlock(f){const r=new DataView(f),o=[];for(let e=0;e<f.byteLength;++e){let t=r.getInt8(e);if(t<0){const n=r.getUint8(e+1);t=-t;for(let l=0;l<=t;++l)o.push(n);e+=1}else{for(let n=0;n<=t;++n)o.push(r.getUint8(e+n+1));e+=t+1}}return new Uint8Array(o).buffer}}export{i as default};
